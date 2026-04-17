@@ -17,7 +17,7 @@ const Navbar = () => {
   const isLoggedIn = true;
 
   const user = {
-    name: "Rajesh Gole",
+    name: "John Doe",
   };
 
   const getInitial = (name: string) => {
