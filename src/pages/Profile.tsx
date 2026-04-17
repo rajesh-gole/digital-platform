@@ -1,9 +1,7 @@
-import React, { useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 
 const Profile = () => {
-  const [preview, setPreview] = useState("");
 
 const getInitial = (name : any) => {
   if (!name) return "?";
@@ -43,17 +41,11 @@ const getInitial = (name : any) => {
         </h2>
 
         <div className="flex justify-center mb-6">
-        {preview ? (
-            <img
-            src={preview}
-            alt="profile"
-            className="w-28 h-28 rounded-full object-cover border"
-            />
-        ) : (
+        {
             <div className="w-28 h-28 rounded-full bg-blue-600 text-white flex items-center justify-center text-4xl font-bold">
             {getInitial(formik.values.name)}
             </div>
-        )}
+        }
 
         <input
             type="file"
