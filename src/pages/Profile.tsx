@@ -10,8 +10,8 @@ const getInitial = (name : any) => {
 
   const formik = useFormik({
     initialValues: {
-      name: "Rajesh Gole",
-      email: "rajesh@gmail.com",
+      name: "John Doe",
+      email: "john.doe@gmail.com",
       phone: "",
     },
     validationSchema: Yup.object({
