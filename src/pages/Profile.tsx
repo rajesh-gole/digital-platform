@@ -26,12 +26,12 @@ const getInitial = (name : any) => {
     }
   });
 
-const handleImage = (e: React.ChangeEvent<HTMLInputElement>) => {
-  if (!e.target.files || e.target.files.length === 0) return;
+// const handleImage = (e: React.ChangeEvent<HTMLInputElement>) => {
+//   if (!e.target.files || e.target.files.length === 0) return;
 
-  const file = e.target.files[0];
-  setPreview(URL.createObjectURL(file));
-};
+//   const file = e.target.files[0];
+//   setPreview(URL.createObjectURL(file));
+// };
 
   return (
     <div className="min-h-screen bg-gray-100 flex justify-center items-center p-6">

@@ -39,8 +39,6 @@ const FlightTickets = () => {
     to: airports[1],
   });
 
-  const totalPassengers =
-    passengers.adults + passengers.children + passengers.infants;
 
   const filteredFrom = airports.filter((a) =>
     formatAirport(a).toLowerCase().includes(fromSearch.toLowerCase())
