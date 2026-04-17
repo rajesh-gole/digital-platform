@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import MobileRechargeTable from "./MobileRechargeTable";
 import DTHRechargeTable from "./DTHRechargeTable";
 import HotelBookingsTable from "./HotelBookingsTable";

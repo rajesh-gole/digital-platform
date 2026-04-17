@@ -1,4 +1,3 @@
-import Navbar from "../components/layout/Navbar";
 
 const LandingPage = () => {
   return (
