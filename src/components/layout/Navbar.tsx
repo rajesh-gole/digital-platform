@@ -55,12 +55,14 @@ const Navbar = () => {
       className="bg-white shadow-md px-6 py-4 flex items-center justify-between relative"
     >
       {/* LOGO */}
-      <div
-        onClick={() => handleNavigate("/")}
-        className="text-2xl font-bold text-blue-600 cursor-pointer"
-      >
+     <div
+      onClick={() => handleNavigate("/")}
+      className="cursor-pointer select-none"
+    >
+      <h1 className="text-xl sm:text-2xl md:text-3xl font-extrabold bg-gradient-to-r from-cyan-500 via-blue-500 to-indigo-600 bg-clip-text text-transparent hover:scale-105 transition duration-300 tracking-wide">
         Smartboat Ecosystem
-      </div>
+      </h1>
+    </div>
 
       {/* DESKTOP MENU */}
       <div className="hidden md:flex items-center gap-8">
