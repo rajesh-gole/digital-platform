@@ -7,12 +7,6 @@ import { Link } from "react-router-dom";
 
 const images = [img1, img2, img3, img4];
 
-// const images = [
-//   "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
-//   "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
-//   "https://images.unsplash.com/photo-1522199710521-72d69614c702",
-// ];
-
 const texts = [
   "Recharge Instantly",
   "Pay Bills Securely",
@@ -61,11 +55,11 @@ const LandingPage = () => {
   // };
 
   return (
-    <div className="min-h-screen relative overflow-hidden bg-gray-50">
+    <div className="min-h-screen relative overflow-hidden bg-cyan-50">
 
-      {/* Background */}
-      <div className="absolute w-96 h-96 bg-blue-200 rounded-full blur-3xl opacity-10 top-0 left-0"></div>
-      <div className="absolute w-96 h-96 bg-indigo-200 rounded-full blur-3xl opacity-10 bottom-0 right-0"></div>
+  {/* Background */}
+  <div className="absolute w-96 h-96 bg-cyan-200 rounded-full blur-3xl opacity-10 top-0 left-0"></div>
+  <div className="absolute w-96 h-96 bg-cyan-300 rounded-full blur-3xl opacity-10 bottom-0 right-0"></div>
 
       {/* HERO */}
       <div className="max-w-7xl mx-auto px-6 py-16 md:py-20 flex flex-col md:flex-row items-center gap-10">
@@ -73,9 +67,9 @@ const LandingPage = () => {
         {/* LEFT */}
         <div className="flex-1 text-center md:text-left">
 
-          <div className="inline-block bg-blue-100 text-blue-700 px-4 py-1 rounded-full text-sm font-semibold mb-6">
-            India's Most Trusted Recharge Platform
-          </div>
+      <div className="inline-block bg-gradient-to-r from-amber-400/20 to-yellow-400/20 text-amber-800 px-5 py-1.5 rounded-full text-sm font-semibold mb-6 backdrop-blur-md border border-amber-300 shadow">
+        India's Most Trusted Recharge Platform
+      </div>
 
           <h1 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
             {displayText}
@@ -149,11 +143,10 @@ const LandingPage = () => {
 
       {/* SERVICES */}
 
-    <div id="services" className="max-w-6xl mx-auto px-6 pb-24">
+    {/* <div id="services" className="max-w-6xl mx-auto px-6 pb-24">
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
 
-        {/* Mobile Recharge */}
         <Link
           to="/mobile-recharge"
           className="group p-6 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-700 text-white shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 text-center block"
@@ -164,7 +157,6 @@ const LandingPage = () => {
           </p>
         </Link>
 
-        {/* DTH Recharge */}
         <Link
           to="/dth-recharge"
           className="group p-6 rounded-2xl bg-gradient-to-br from-purple-500 to-purple-700 text-white shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 text-center block"
@@ -175,7 +167,6 @@ const LandingPage = () => {
           </p>
         </Link>
 
-        {/* Flight Tickets */}
         <Link
           to="/flight-tickets"
           className="group p-6 rounded-2xl bg-gradient-to-br from-indigo-500 to-indigo-700 text-white shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 text-center block"
@@ -186,7 +177,6 @@ const LandingPage = () => {
           </p>
         </Link>
 
-        {/* Hotels */}
         <Link
           to="/hotels"
           className="group p-6 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 text-white shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 text-center block"
@@ -199,7 +189,114 @@ const LandingPage = () => {
 
       </div>
 
+    </div> */}
+
+{/* WHY CHOOSE US */}
+
+<div className="max-w-7xl mx-auto px-6 pb-24">
+
+  <div className="text-center mb-14">
+    <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+      Why Choose Our Platform
+    </h2>
+    <p className="text-gray-600 mt-3">
+      Fast, secure and reliable services trusted by millions.
+    </p>
+  </div>
+
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+
+    {/* Card */}
+    <div className="p-6 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-600 text-white shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition text-center">
+      <div className="text-4xl mb-3">⚡</div>
+      <h3 className="font-semibold text-lg">Instant Recharge</h3>
+      <p className="text-blue-100 text-sm mt-2">
+        Complete recharge within seconds with zero hassle.
+      </p>
     </div>
+
+    {/* Card */}
+    <div className="p-6 rounded-2xl bg-gradient-to-br from-purple-500 to-purple-600 text-white shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition text-center">
+      <div className="text-4xl mb-3">🔒</div>
+      <h3 className="font-semibold text-lg">Secure Payments</h3>
+      <p className="text-purple-100 text-sm mt-2">
+        Advanced encryption ensures safe transactions.
+      </p>
+    </div>
+
+    {/* Card */}
+    <div className="p-6 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-600 text-white shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition text-center">
+      <div className="text-4xl mb-3">💰</div>
+      <h3 className="font-semibold text-lg">Best Cashback</h3>
+      <p className="text-emerald-100 text-sm mt-2">
+        Enjoy exciting offers and cashback on every recharge.
+      </p>
+    </div>
+
+    {/* Card */}
+    <div className="p-6 rounded-2xl bg-gradient-to-br from-indigo-500 to-indigo-600 text-white shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition text-center">
+      <div className="text-4xl mb-3">📞</div>
+      <h3 className="font-semibold text-lg">24/7 Support</h3>
+      <p className="text-indigo-100 text-sm mt-2">
+        Our support team is always ready to help you.
+      </p>
+    </div>
+
+  </div>
+
+</div>
+
+{/* SPECIAL OFFERS */}
+
+<div className="bg-gradient-to-r from-cyan-600 to-purple-600 py-20">
+
+  <div className="max-w-6xl mx-auto px-6 text-center text-white">
+
+    <h2 className="text-3xl md:text-4xl font-bold">
+      Exclusive Recharge Offers
+    </h2>
+
+    <p className="mt-4 text-indigo-100">
+      Save more with exciting cashback and special deals.
+    </p>
+
+    <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+      <div className="bg-white text-gray-900 p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+        <div className="text-4xl">🎁</div>
+        <h3 className="mt-3 font-semibold text-lg">
+          ₹50 Cashback
+        </h3>
+        <p className="text-gray-500 text-sm mt-2">
+          Get cashback on your first mobile recharge.
+        </p>
+      </div>
+
+      <div className="bg-white text-gray-900 p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+        <div className="text-4xl">✈️</div>
+        <h3 className="mt-3 font-semibold text-lg">
+          Flight Discount
+        </h3>
+        <p className="text-gray-500 text-sm mt-2">
+          Flat ₹500 off on your first flight booking.
+        </p>
+      </div>
+
+      <div className="bg-white text-gray-900 p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+        <div className="text-4xl">🏨</div>
+        <h3 className="mt-3 font-semibold text-lg">
+          Hotel Deals
+        </h3>
+        <p className="text-gray-500 text-sm mt-2">
+          Save up to 30% on hotel bookings.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
 
     </div>
   );
